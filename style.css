@@ -17,8 +17,121 @@
     --dark-btn-bg-light: #eeeeee;
 }
 
-body {
-    font-family: var(--primary-font);
-    background-color: var(--primary-bg-color);
+.dark-theme {
+    --primary-bg-color: var(--dark-primary-bg-color);
+    --primary-text-color: var(--dark-primary-text-color);
+    --secondary-color: var(--dark-secondary-color);
+    --btn-bg-color: var(--dark-btn-bg-color);
+    --cta-hover-color: var(--dark-cta-hover-color);
+    --btn-bg-light: var(--dark-btn-bg-light);
 }
 
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.theme-btn {
+    position: relative;
+    left: 8.5rem;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    cursor: default;
+}
+
+article,
+footer,
+.hero,
+.logo-contanier,
+.experience,
+.cta,
+.portfolio-skills,
+.btn-bg,
+.portfolio,
+.skills {
+    display: flex;
+}
+
+.hero,
+.portfolio,
+.skills {
+    flex-direction: column;
+}
+
+.hero,
+.btn-bg,
+.portfolio,
+.skills {
+    align-items: center;
+}
+
+.theme-btn,
+.logo-contanier a,
+.logo-contanier img {
+    height: 1.5rem;
+}
+
+.hero,
+.experience,
+.wrapper {
+    text-align: center;
+}
+
+article,
+.hero,
+.logo-contanier,
+.portfolio,
+.skills {
+    gap: 1rem;
+}
+
+.hero-pic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner-circle {
+    content: "";
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    right: 0.1rem;
+    bottom: 0.1rem;
+    border-radius: 50%;
+    border: 0.18rem solid var(--primary-bg-color);
+    z-index: 1;
+}
+
+.hero-pic img, .wrapper img {
+    width: 100%;
+}
+
+.hero-pic img {
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    background-color: var(--dark-primary-bg-color);
+}
+
+.hero-info h1, h2 {
+    font-weight: 400;
+}
+
+article p, .hero-info h2 {
+    color: var(--secondary-colors);
+}
+
+.hero-info h2 {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
