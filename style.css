@@ -49,7 +49,7 @@ p {
 article,
 footer,
 .hero,
-.logo-contanier,
+.logo-container,
 .experience,
 .cta,
 .portfolio-skills,
@@ -73,8 +73,8 @@ footer,
 }
 
 .theme-btn,
-.logo-contanier a,
-.logo-contanier img {
+.logo-container a,
+.logo-container img {
     height: 1.5rem;
 }
 
@@ -86,7 +86,7 @@ footer,
 
 article,
 .hero,
-.logo-contanier,
+.logo-container,
 .portfolio,
 .skills {
     gap: 1rem;
@@ -112,7 +112,8 @@ article,
     z-index: 1;
 }
 
-.hero-pic img, .wrapper img {
+.hero-pic img,
+.wrapper img {
     width: 100%;
 }
 
@@ -123,11 +124,13 @@ article,
     background-color: var(--dark-primary-bg-color);
 }
 
-.hero-info h1, h2 {
+.hero-info h1,
+h2 {
     font-weight: 400;
 }
 
-article p, .hero-info h2 {
+article p,
+.hero-info h2 {
     color: var(--secondary-colors);
 }
 
@@ -135,3 +138,163 @@ article p, .hero-info h2 {
     font-size: 1rem;
     margin: 0 0 1rem 0;
 }
+
+footer,
+.logo-container,
+.experience,
+.cta,
+.portfolio-skills,
+.btn-bg {
+    justify-content: center;
+}
+
+.experience {
+    margin: auto;
+    margin-top: 1.4rem;
+    max-width: 20rem;
+}
+
+.experience b {
+    font-weight: 500;
+}
+
+.experience h2 {
+    width: 30%;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.cta {
+    margin-top: 1.2rem;
+}
+
+.cta,
+.btn-bg {
+    gap: 2rem;
+}
+
+.btn,
+.btn-2,
+.btn-bg {
+    border-radius: 0.7rem;
+    border: none;
+}
+
+.btn,
+.btn-2,
+.btn-bg 
+.wrapper h3 {
+    font-weight: 600;
+}
+
+.btn,
+.btn-2,
+.btn-bg 
+.wrapper,
+.project-wrapper {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.download-btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.theme-btn,
+.download-btn:hover,
+.contact-btn:hover,
+.btn-2:hover,
+.wrapper img:hover {
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn-2:hover,
+.project-wrapper:hover,
+.logo-container a:hover {
+    transform: scale(0.98);
+}
+
+.btn:active,
+.btn-2:active,
+.project-wrapper:active,
+.logo-container a:active {
+    transform: scale(1);
+}
+
+.contact-btn:hover,
+.download-btn {
+    background-color: var(--btn-bg-color);
+}
+
+.contact-btn:hover {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-2:hover,
+.active-btn {
+    background-color: white;
+}
+
+.btn,
+.btn-2 {
+    height: 3rem;
+}
+
+.btn {
+    width: 9rem
+}
+
+.btn-2 {
+    width: 8.5rem;
+}
+
+.download-btn {
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-skills {
+    height: 4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.btn-bg,
+.wrapper {
+    width: 20rem;
+}
+
+article p,
+.btn-bg {
+    background-color: var(--btn-bg-light);
+}
+
+.hero, .portfolio, .skills {
+    margin-top: 2rem;
+}
+
+.skills {
+    /* display: none; */
+}
+
+.wrapper img {
+    border-radius: 1rem;
+}
+
+article, .wrapper h3 {
+    margin-bottom: 1.5rem;
+}
+
+article {
+    flex-wrap: wrap;
+}
+
+article p {
+    border-radius: 0.5rem;
+    flex-grow: 20;
+    padding: 1rem;
+}
+
+footer {
+    margin: 3rem 0;
+}
+
