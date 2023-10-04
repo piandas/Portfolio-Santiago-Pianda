@@ -305,15 +305,18 @@ footer {
         flex-direction: row;
         width: 45rem;
     }
+
     .skills {
         margin: 2rem auto 0;
         justify-content: center;
     }
+
     .portfolio {
         margin: 2rem auto;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .wrapper {
         width: calc(48%);
         flex: none;
