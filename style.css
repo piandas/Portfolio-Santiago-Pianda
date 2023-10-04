@@ -1,0 +1,24 @@
+:root {
+    /* Light Mode */
+    --primary-font: "Poppins", sans-serif;
+    --primary-bg-color: #ffffff;
+    --primary-text-color: #000000;
+    --secondary-color: #575757;
+    --btn-bg-color: #2196f3;
+    --cta-hover-color: #167bce;
+    --btn-bg-light: #eeeeee;
+
+    /* Dark Mode */
+    --dark-primary-bg-color: #222222;
+    --dark-primary-text-color: #ffffff;
+    --dark-secondary-color: #828282;
+    --dark-btn-bg-color: #1e88e5;
+    --dark-cta-hover-color: #0d5e8c;
+    --dark-btn-bg-light: #eeeeee;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg-color);
+}
+
