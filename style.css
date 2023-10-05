@@ -257,6 +257,10 @@ footer,
     position: relative;
 }
 
+.dark-theme .skills p {
+    color: #000000;
+}
+
 .btn-bg,
 .wrapper {
     width: 20rem;
