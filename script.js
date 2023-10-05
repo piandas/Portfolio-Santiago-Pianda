@@ -95,6 +95,9 @@ const translations = {
         comunication: "Effective Communication and Emotional Intelligence",
         innovation: "Innovation and Creativity",
         webDevelopment: "Web Development",
+        project1: "Movie Recommendation System with Python and SQL",
+        project2: "Employee Withdrawal Analysis, Retention Strategies",
+        project3: "Pokedex & APIs",
     },
     es: {
         career: "Ingeniería Industrial, Analítica y Desarrollo Web",
@@ -120,6 +123,9 @@ const translations = {
         comunication: "Comunicación efectiva e inteligencia emocional",
         innovation: "Innovación y Creatividad",
         webDevelopment: "Desarrollo Web",
+        project1: "Sistema de Recomendacion de Peliculas con Python y SQL",
+        project2: "Análisis de Retiros de Empleados, Estrategias de Retención",
+        project3: "Pokedex & APIs",
     }
 };
 
