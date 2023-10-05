@@ -58,6 +58,7 @@ body {
     position: relative;
     left: 8.5rem;
     font-weight: 600;
+    margin-right: 4rem;
 }
 
 #languageButton:hover {
