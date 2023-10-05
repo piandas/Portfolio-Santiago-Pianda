@@ -121,7 +121,6 @@ article,
     height: 100%;
     object-fit: cover;
     transform: scale(1.1);
-    background-color: var(--dark-primary-bg-color);
 }
 
 .hero-info h1,
@@ -222,7 +221,7 @@ footer,
 }
 
 .contact-btn:hover,
-.download-btn {
+.download-btn:hover {
     background-color: var(--btn-bg-color);
 }
 

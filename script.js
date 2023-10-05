@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const githubLogo = document.querySelector('img[alt="github logo"]');
     const linkedinLogo = document.querySelector('img[alt="linkedin logo"]');
     const emailLogo = document.querySelector('img[alt="email logo"]');
+    const profileImage = document.querySelector('.hero-pic img');
 
     const lightLogos = {
         github: "assets/github_light.png",
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         linkedinLogo.src = isDark ? darkLogos.linkedin : lightLogos.linkedin;
         emailLogo.src = isDark ? darkLogos.email : lightLogos.email;
         themeIcon.src = isDark ? darkLogos.theme : lightLogos.theme;
+        profileImage.style.backgroundColor = isDark ? "#ffffff" : "#222222";
     }
 
 
