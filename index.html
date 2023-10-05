@@ -12,19 +12,22 @@
 </head>
 <body>
     <section class="hero">
-        <img 
-        id="toggleTheme" 
-        class="theme-btn" 
-        src="/assets/theme_light.png" 
-        alt="theme icon"
-        />
+        <div class="button-container">
+            <img 
+            id="toggleTheme" 
+            class="theme-btn" 
+            src="/assets/theme_light.png" 
+            alt="theme icon"
+            />
+            <button id="languageButton" data-lang="es">English</button>
+        </div>
         <div class="hero-pic">
             <div class="inner-circle"></div>
             <img src="assets/profile-pic.png" alt="Santiago Pianda">
         </div>
         <div class="hero-info">
             <h1>Santiago Pianda</h1>
-            <h2>Ingeniería Industrial, Analítica y Desarrollo Web</h2>
+            <h2 data-translate="career">Ingeniería Industrial, Analítica y Desarrollo Web</h2>
             <div class="logo-container">
                 <a href="https://github.com/piandas" target="_blank" rel="noopener noreferrer">
                     <img src="assets/github_light.png" 
@@ -43,79 +46,80 @@
     </section>
     <section class="experience">
         <h2>
-            <b>9no</b> <br> 
-            <b>Semestre</b> <br> 
-            Ingeniería Industrial
+            <b data-translate="semesterNumber">9no</b> <br> 
+            <b data-translate="semester">Semestre</b> <br> 
+            <span data-translate="semesterCareer">Ingeniería Industrial</span>
         </h2>
         <h2>
             <b>1</b> <br> 
-            <b>Año</b><br> 
-            Análisis de Datos
+            <b data-translate="year">Año</b><br> 
+            <span data-translate="dataAnalyst">Análisis de Datos</span>
         </h2>
         <h2>
             <b>1</b> <br> 
-            <b>Año</b><br> 
-            Desarrollo Web
+            <b data-translate="year">Año</b><br> 
+            <span data-translate="webDeveloper">Desarrollo Web</span>
         </h2>
     </section>
     <section class="cta">
         <a href="assets/CV2_Santiago_Bustos_Pianda.pdf" download>
-            <button class="btn download-btn">Descargar CV</button>
+            <button class="btn download-btn" data-translate="cv">Descargar CV</button>
         </a>
         <a href="mailto:santiagobustosp@gmail.com">
-            <button class="btn contact-btn">Contáctame</button>
+            <button class="btn contact-btn" data-translate="contactMe">Contáctame</button>
         </a>
     </section>
     <section class="portfolio-skills">
         <div class="btn-bg">
-            <button class="btn-2 active-btn" id="portfolio-btn">Portfolio</button>
-            <button class="btn-2" id="skills-btn">Competencias</button>
+            <button class="btn-2 active-btn" id="portfolio-btn" data-translate="portfolio">Portafolio</button>
+            <button class="btn-2" id="skills-btn" data-translate="skills">Competencias</button>
         </div>
     </section>
     <section class="portfolio" id="portfolio">
         <div class="wrapper project-wrapper">
-            <a href="https://github.com/piandas">
+            <a href="https://github.com/piandas/Sistema-Recomendacion-Peliculas-Python-SQL">
                 <img src="assets/project-1.png" alt="Project 1">
             </a>
         </div>
         <div class="wrapper project-wrapper">
-            <a href="https://github.com/piandas">
-                <img src="assets/project-2.png" alt="Project 1">
+            <a href="https://github.com/piandas/Analisis-Retiros-Empleados-Estrategias-Retencion">
+                <img src="assets/project-2.png" alt="Project 2">
             </a>
         </div>
         <div class="wrapper project-wrapper">
-            <a href="https://github.com/piandas">
-                <img src="assets/project-3.png" alt="Project 1">
+            <a href="https://github.com/piandas/Pokedex">
+                <img src="assets/project-3.png" alt="Project 3">
             </a>
         </div>
     </section>
     <section class="skills" id="skills">
         <div class="wrapper">
-            <h3>Analítica</h3>
+            <h3 data-translate="analytics">Analítica</h3>
             <article class="analytical-skills">
                 <p>Python</p>
                 <p>SQL</p>
                 <p>Excel</p>
-                <p>Simulación</p>
+                <p data-translate="simulation">Simulación</p>
                 <p>R Studio</p>
                 <p>Machine Learning</p>
             </article>
         </div>
         <div class="wrapper">
-            <h3>Ingeniería Industrial</h3>
+            <h3 data-translate="industrial">Ingeniería Industrial</h3>
             <article class="frontend-skills">
-                <p>Optimización</p>
-                <p>Análisis de Procesos</p>
-                <p>Gestión de Proyectos</p>
-                <p>Visualización de Datos</p>
+                <p data-translate="optimization">Optimización</p>
+                <p data-translate="english">Inglés C1</p>
+                <p data-translate="processAnalysis">Análisis de Procesos</p>
+                <p data-translate="projectGestion">Gestión de Proyectos</p>
+                <p data-translate="dataVisualization">Visualización de Datos</p>
                 <p>Power BI</p>
-                <p>Liderazgo</p>
-                <p>Comunicación efectiva e inteligencia emocional</p>
-                <p>Innovación y Creatividad</p>
+                <p data-translate="leadership">Liderazgo</p>
+                <p data-translate="comunication">Comunicación efectiva e inteligencia emocional</p>
+                <p data-translate="innovation">Innovación y Creatividad</p>
             </article>
         </div>
         <div class="wrapper">
-            <h3>Desarrollo Web</h3>
+            <h3 data-translate="webDevelopment">Desarrollo Web</h3>
             <article class="frontend-skills">
                 <p>HTML</p>
                 <p>CSS</p>

@@ -33,9 +33,36 @@ body {
     color: var(--primary-text-color);
 }
 
+.button-container {
+    display: flex;
+    position: relative;
+}
+
+.theme-btn, .lang-btn {
+    margin-right: 1rem;
+}
+
 .theme-btn {
     position: relative;
     left: 8.5rem;
+}
+
+#languageButton {
+    background-color: var(--btn-bg-light);
+    color: var(--btn-bg-color);
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    left: 8.5rem;
+    font-weight: 600;
+}
+
+#languageButton:hover {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-bg-light);
 }
 
 h1,

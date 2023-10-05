@@ -67,3 +67,90 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadTheme();
 });
+
+// Translations
+// =============================================================
+const translations = {
+    en: {
+        career: "Industrial Engineering, Analytics & Web Development",
+        semesterNumber: "9th",
+        semester: "Semester",
+        semesterCareer: "Industrial Engineering",
+        year: "Year",
+        dataAnalyst: "Data Analysis",
+        webDeveloper: "Web Development",
+        cv: "Download CV",
+        contactMe: "Contact Me",
+        portfolio: "Portfolio",
+        skills: "Skills",
+        analytics: "Analytics",
+        simulation: "Simulation",
+        industrial: "Industrial Engineering",
+        optimization: "Optimization",
+        english: "C1 English",
+        processAnalysis: "Process Analysis",
+        projectGestion: "Project Management",
+        dataVisualization: "Data Visualization",
+        leadership: "Leadership",
+        comunication: "Effective Communication and Emotional Intelligence",
+        innovation: "Innovation and Creativity",
+        webDevelopment: "Web Development",
+    },
+    es: {
+        career: "Ingeniería Industrial, Analítica y Desarrollo Web",
+        semesterNumber: "9no",
+        semester: "Semestre",
+        semesterCareer: "Ingeniería Industrial",
+        year: "Año",
+        dataAnalyst: "Análisis de Datos",
+        webDeveloper: "Desarrollo Web",
+        cv: "Descargar CV",
+        contactMe: "Contáctame",
+        portfolio: "Portafolio",
+        skills: "Competencias",
+        analytics: "Analítica",
+        simulation: "Simulación",
+        industrial: "Ingeniería Industrial",
+        optimization: "Optimización",
+        english: "Inglés C1",
+        processAnalysis: "Análisis de Procesos",
+        projectGestion: "Gestión de Proyectos",
+        dataVisualization: "Visualización de Datos",
+        leadership: "Liderazgo",
+        comunication: "Comunicación efectiva e inteligencia emocional",
+        innovation: "Innovación y Creatividad",
+        webDevelopment: "Desarrollo Web",
+    }
+};
+
+
+// Function to change the language
+document.addEventListener("DOMContentLoaded", () => {
+
+    const changeLanguage = (lang) => {
+        document.querySelectorAll("[data-translate]").forEach(elem => {
+            const key = elem.getAttribute("data-translate");
+            elem.textContent = translations[lang][key];
+        });
+    };
+
+    const loadLang = () => {
+        const savedLang = localStorage.getItem("selectedLang") || "es";
+        changeLanguage(savedLang);
+        document.getElementById("languageButton").setAttribute("data-lang", savedLang);
+        document.getElementById("languageButton").textContent = (savedLang === "es" ? "English" : "Español");
+    };
+
+    document.getElementById("languageButton").addEventListener("click", function() {
+        const currentLang = this.getAttribute("data-lang");
+        const newLang = (currentLang === "en" ? "es" : "en");
+        
+        changeLanguage(newLang);
+        this.setAttribute("data-lang", newLang);
+        this.textContent = (newLang === "es" ? "English" : "Español");
+        
+        localStorage.setItem("selectedLang", newLang);
+    });
+
+    loadLang();
+});
