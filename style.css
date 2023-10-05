@@ -35,7 +35,7 @@ body {
 
 .button-container {
     display: flex;
-    position: relative;
+    align-items: center;
 }
 
 .theme-btn, .lang-btn {
@@ -58,7 +58,7 @@ body {
     position: relative;
     left: 8.5rem;
     font-weight: 600;
-    margin-right: 4rem;
+    margin-right: 4.5rem;
 }
 
 #languageButton:hover {
