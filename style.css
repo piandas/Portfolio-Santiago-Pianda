@@ -261,6 +261,18 @@ footer,
     color: #000000;
 }
 
+.cta .btn {
+    color: var(--btn-bg-color);
+}
+
+.cta .btn:hover {
+    color: var(--btn-bg-light);
+}
+
+#portfolio-btn, #skills-btn {
+    color: var(--btn-bg-color);
+}
+
 .btn-bg,
 .wrapper {
     width: 20rem;
