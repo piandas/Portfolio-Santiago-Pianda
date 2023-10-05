@@ -363,3 +363,9 @@ footer {
     width: 100%;
     max-width: 35rem;
 }
+
+@media (max-width: 767px) {
+    #languageButton:focus {
+        outline: none;
+    }
+}
