@@ -98,6 +98,8 @@ const translations = {
         project1: "Movie Recommendation System with Python and SQL",
         project2: "Employee Withdrawal Analysis, Retention Strategies",
         project3: "Pokedex & APIs",
+        age: "23 y/o",
+        university: "University of Antioquia - Medellín, Colombia",
     },
     es: {
         career: "Ingeniería Industrial, Analítica y Desarrollo Web",
@@ -126,6 +128,8 @@ const translations = {
         project1: "Sistema de Recomendacion de Peliculas con Python y SQL",
         project2: "Análisis de Retiros de Empleados, Estrategias de Retención",
         project3: "Pokedex & APIs",
+        age: "23 años",
+        university: "Universidad de Antioquia - Medellín, Colombia",
     }
 };
 
