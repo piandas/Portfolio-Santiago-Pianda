@@ -1,56 +1,58 @@
-Ingeniero Industrial con habilidades avanzadas en programación. A lo largo de mi carrera, he adquirido competencias en diversas tecnologías como Python, SQL, HTML, CSS, JavaScript, Node.js, Angular y React. Este repositorio sirve como vitrina para presentar mis proyectos y demostrar la versatilidad de mis habilidades técnicas.
+Industrial Engineer with advanced programming skills. Throughout my career, I have acquired skills in various technologies such as Python, SQL, HTML, CSS, JavaScript, Node.js, Angular and React. This repository serves as a showcase to present my projects and demonstrate the versatility of my technical skills.
 
 
-# Portfolio de Santiago Bustos Pianda
+# Santiago Bustos Pianda's Portfolio
 
-Bienvenido a mi portafolio personal, donde comparto información sobre mi educación, experiencia y proyectos. Este portafolio ha sido desarrollado con HTML, CSS y JavaScript. 
+Welcome to my personal portfolio, where I share information about my education, experience, and projects. This portfolio has been developed using HTML, CSS, and JavaScript.
 
-## 🚀 Inicio Rápido
+## 🚀 Quick Start
 
-Para obtener una copia local y ejecutar este proyecto, sigue los siguientes pasos:
+If you want to visit the site directly you can go to the following link: [Web Portfolio Santiago Pianda](porfolio-santiago-pianda.web.app)
 
-### Pre-requisitos
+Or if you prefer to view it in your code editor, get a local copy and run this project, follow the steps below:
 
-- Un navegador web moderno
+### Prerequisites
+
+- A modern web browser
 - [Git](https://git-scm.com)
 
-### Instalación
+### Installation
 
-1. Clona el repositorio
+1. Clone the repository
    ```sh
-   git clone https://github.com/piandas/Portfolio-Santiago-Pianda
+   git clone https://github.com/piandas/portfolio.git
    ```
-2. Abre `index.html` con tu navegador preferido.
+2. Open `index.html` with your preferred browser.
 
-## 🧐 Características
+## 📝 Features
 
-- **Modo Oscuro:** Cambia entre tema oscuro y claro para una mejor experiencia visual.
-- **Multilenguaje:** Cambia entre inglés y español para explorar el portafolio en tu idioma preferido.
-- **Responsive:** Adecuado para ser visualizado en diferentes tamaños de pantalla, incluyendo móviles y tablets.
-- **Descarga de CV:** Ofrece una opción para descargar el CV directamente desde la página.
+- **Dark Mode:** Switch between dark and light theme for a better visual experience.
+- **Multilanguage:** Switch between English and Spanish to explore the portfolio in your preferred language.
+- **Responsive:** Suitable to be viewed on various screen sizes, including mobiles and tablets.
+- **Download CV:** Offers an option to download the CV directly from the page.
   
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **HTML5:** Estructura básica y contenido.
-- **CSS3:** Diseño y estilos.
-- **JavaScript:** Interactividad y manipulación del DOM.
-- **Google Fonts:** Fuentes utilizadas en el proyecto.
+- **HTML5:** Basic structure and content.
+- **CSS3:** Design and styling.
+- **JavaScript:** Interactivity and DOM manipulation.
+- **Google Fonts:** Fonts used in the project.
 
-## 🗂️ Estructura del Proyecto
+## 🗂️ Project Structure
 
 ```
-portafolio/
+portfolio/
 │
-├── assets/                   # Imágenes y otros recursos estáticos
+├── assets/                   # Images and other static resources
 │
-├── style.css                 # Hoja de estilos principal
+├── style.css                 # Main stylesheet
 │
-├── script.js                 # Script para lógica del cliente
+├── script.js                 # Script for client logic
 │
-└── index.html                # Archivo HTML principal
+└── index.html                # Main HTML file
 ```
 
-## 📬 Contacto
+## 📬 Contact
 
 - Santiago Bustos Pianda - santiagobustosp@gmail.com
 - LinkedIn: [https://linkedin.com/in/santiago-bustos-pianda](https://linkedin.com/in/santiago-bustos-pianda)
