@@ -7,7 +7,7 @@ Welcome to my personal portfolio, where I share information about my education, 
 
 ## 🚀 Quick Start
 
-If you want to visit the site directly you can go to the following link: [Web Portfolio Santiago Pianda](porfolio-santiago-pianda.web.app)
+If you want to visit the site directly you can go to the following link: [Web Portfolio Santiago Pianda](https://porfolio-santiago-pianda.web.app/)
 
 Or if you prefer to view it in your code editor, get a local copy and run this project, follow the steps below:
 
