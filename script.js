@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailLogo = document.querySelector('img[alt="email logo"]');
     const profileImage = document.querySelector('.hero-pic img');
 
+    // Mostrar "skills" al cargar la página
+    portfolio.style.display = "none"; // Ocultar portfolio
+    skills.style.display = "flex"; // Mostrar skills
+    portfolioBtn.classList.remove("active-btn"); // Remover clase activa del botón portfolio
+    skillsBtn.classList.add("active-btn"); // Agregar clase activa al botón skills
+
     const lightLogos = {
         github: "assets/github_light.png",
         linkedin: "assets/linkedin_light.png",
@@ -73,10 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const translations = {
     en: {
         career: "Industrial Engineering, Analytics & Web Development",
-        semesterNumber: "9th",
-        semester: "Semester",
+        semesterNumber: "1 year",
+        semester: "Profesional",
         semesterCareer: "Industrial Engineering",
         year: "Year",
+        years: "Years",
         dataAnalyst: "Data Analysis",
         webDeveloper: "Web Development",
         cv: "Download CV",
@@ -85,6 +92,8 @@ const translations = {
         skills: "Skills",
         analytics: "Analytics",
         simulation: "Simulation",
+        ia: "Artificial Intelligence",
+        automation: "Process Automation",
         industrial: "Industrial Engineering",
         optimization: "Optimization",
         english: "B2 English",
@@ -98,15 +107,16 @@ const translations = {
         project1: "Movie Recommendation System with Python and SQL",
         project2: "Employee Withdrawal Analysis, Retention Strategies",
         project3: "Pokedex & APIs",
-        age: "23 y/o",
-        university: "University of Antioquia - Medellín, Colombia",
+        age: "25 y/o",
+        university: "National University UNAL - Medellín, Colombia",
     },
     es: {
-        career: "Ingeniería Industrial, Analítica y Desarrollo Web",
-        semesterNumber: "9no",
-        semester: "Semestre",
+        career: "Ingeniería Industrial, Analítica de Datos y Automatización",
+        semesterNumber: "1 año",
+        semester: "Profesional",
         semesterCareer: "Ingeniería Industrial",
         year: "Año",
+        years: "Años",
         dataAnalyst: "Análisis de Datos",
         webDeveloper: "Desarrollo Web",
         cv: "Descargar CV",
@@ -114,7 +124,9 @@ const translations = {
         portfolio: "Portafolio",
         skills: "Competencias",
         analytics: "Analítica",
+        ia: "Inteligencia Artificial",
         simulation: "Simulación",
+        automation: "Automatización de Procesos",
         industrial: "Ingeniería Industrial",
         optimization: "Optimización",
         english: "Inglés B2",
@@ -128,8 +140,8 @@ const translations = {
         project1: "Sistema de Recomendacion de Peliculas con Python y SQL",
         project2: "Análisis de Retiros de Empleados, Estrategias de Retención",
         project3: "Pokedex & APIs",
-        age: "23 años",
-        university: "Universidad de Antioquia - Medellín, Colombia",
+        age: "25 años",
+        university: "Universidad Nacional UNAL - Medellín, Colombia",
     }
 };
 
@@ -142,6 +154,13 @@ document.addEventListener("DOMContentLoaded", () => {
             const key = elem.getAttribute("data-translate");
             elem.textContent = translations[lang][key];
         });
+        // Cambia el archivo de descarga del CV según el idioma
+        const cvDownloadLink = document.getElementById("cvDownloadLink");
+        if (lang === "es") {
+            cvDownloadLink.setAttribute("href", "assets/CV_Santiago_Pianda.pdf");
+        } else if (lang === "en") {
+            cvDownloadLink.setAttribute("href", "assets/CV_Santiago_Pianda_English.pdf");
+        }
     };
 
     const loadLang = () => {

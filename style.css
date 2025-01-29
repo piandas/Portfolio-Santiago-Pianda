@@ -179,6 +179,7 @@ footer,
     margin: auto;
     margin-top: 1.4rem;
     max-width: 20rem;
+    gap: 1.5rem;
 }
 
 .experience b {
